@@ -63,7 +63,7 @@ const loopDevice = async() => {
 loopDevice();
 
 
-// 
+// sending message to email
 document.getElementById("form").addEventListener("submit", function(event) {
   event.preventDefault();
 
