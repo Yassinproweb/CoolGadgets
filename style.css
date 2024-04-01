@@ -1,0 +1,194 @@
+:root {
+  /* colors for text and backgrounds */
+  --w: hsl(245, 13%, 99%);
+  --f: hsl(265, 13%, 95%, 0.75);
+  --c: hsl(245, 83%, 51%);
+  --h: hsl(265, 83%, 51%);
+  --r: hsl(295, 73%, 45%);
+  --t: hsl(45, 13%, 7%, 0.65);
+  --b: hsl(45, 13%, 7%);
+  
+  /* padding values */
+  --x: 5vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 350ms ease-in-out;
+}
+
+body {
+  background: var(--w);
+  font-family: "Barlow";
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "Handjet";
+}
+
+h6 {
+  font-family: 'Orbitron';
+  font-family: "Handjet";
+}
+
+div, section, footer, form, ul, nav, header {
+  display: flex;
+}
+
+section, header {
+  width: 100%;
+  padding: var(--x);
+}
+
+section {
+  min-height: 100svh;
+  z-index: 1;
+  padding-block: 3.85rem;
+}
+
+footer {
+  padding-inline: var(--x);
+  padding-block: 55px;
+}
+
+header {
+  padding-block: 13px;
+  z-index: 1000;
+}
+
+img {
+  pointer-events: none;
+}
+
+input, select, button {
+  outline: none;
+  appearance: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2, h3, h4, h5, h6, p {
+  pointer-events: none;
+}
+
+
+/* header navbar and menu */
+header.show {
+  box-shadow: 0px 1px 13px -7px hsl(265, 53%, 7%, 0.35);
+}
+
+.menu {
+  translate: 105vw;
+  scale: 0 1;
+  visibility: hidden;
+  transform-origin: top right;
+  transition-timing-function: ease-in-out;
+  transition-property: translate, scale, visibility;
+  transition-duration: 500ms, 500ms, 500ms;
+  transition-delay: 0, 50ms, 250ms;
+}
+
+.Menu {
+  box-shadow: -3px -3px 5px hsl(245, 33%, 15%, 0.09);
+}
+
+.menu-list a, .menu-list p {
+  padding-left: 7px;
+}
+
+.menu.show {
+  scale: 1;
+  translate: 0;
+  visibility: visible;
+  backdrop-filter: blur(13px);
+}
+
+
+/* hero section */
+#cursor {
+  animation: text 1s infinite linear;
+  transform-origin: left;
+}
+
+.text-s {
+  width: fit-content;
+  background-image: linear-gradient(to right, var(--h), var(--r));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2, #span, #cursor, b, i, h6, .menu-list h4, .menu-list .ph {
+  background-image: linear-gradient(to right, var(--c), var(--r));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.menu-list a:hover {
+  text-decoration: underline;
+  text-underline-position: 4px;
+}
+
+.menulist .ph:hover {
+  background-image: linear-gradient(to right, var(--r) 75%, var(--c));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes text {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* services section */
+.div {
+  box-shadow: inset 0px 1px 7px hsl(265, 83%, 45%, 0.35),
+    0px 1px 7px hsl(265, 83%, 45%, 0.35);
+  border: 1px solid hsl(265, 83%, 45%, 0.35);
+}
+
+.div:hover {
+  box-shadow: inset 0px 1px 9px hsl(265, 83%, 45%, 0.5),
+    0px 1px 9px hsl(265, 83%, 45%, 0.5);
+}
+
+.div h4 {
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.div p {
+  line-height: 0.93;
+}
+
+
+/* products section */
+.grid-gdts > div > p {
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
