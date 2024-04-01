@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the latest smartphones, tablets, iPads, smartwatches, and accessories at CoolGadgets in Kampala, Uganda. Explore our hot sale discounts and reliable repair services for screen replacements, motherboard repairs, and battery replacements. Get quality USB cables, chargers, adapters, screen protectors, and phone cases for your gadgets.">
+  <meta name="keywords" content="CoolGadgets, smartphones, iPhone, Samsung, tablets, iPads, smartwatches, accessories, screen protectors, phone cases, usb cables, chargers, adapters, swapping devices, hot sale discounts, mechanical repairs, Kampala, Uganda">
+
+  <!-- link to google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- linkto tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- link to phosphor icons -->
+  <link rel="stylesheet" href="regular.css">
+
+  <!-- link to AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- link to favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/logo.png">
+  
+  <style>
+    /* link to google fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Handjet:wght@100..900&family=Orbitron:wght@400..900&display=swap')
+  </style>
+
+  <!-- title of the page -->
+  <title>Cool Gadgets</title>
+</head>
+<body>
+  <header class="fixed w-full items-center justify-between bg-[--w]">
+    <div class="w-fit items-center gap-1.5" data-aos="zoom-in">
+      <img src="/logo.jpg" alt="Cool Gadgets logo" class="w-9 aspect-square rounded-3xl object-cover object-center">
+      <h6 class="text-transparent text-3xl font-bold">Cool Gadgets</h6>
+    </div>
+
+    <span id="menubtn" class="w-fit text-[--c] text-4xl">
+      <i class="ph ph-list text-transparent"></i>
+    </span>
+
+    <div class="fixed w-screen top-0 left-0 h-screen items-center justify-end menu z-[1003]">
+      <div class="w-[285px] h-full flex-col gap-5 py-[65px] px-7 bg-[--w] Menu">
+        <i id="closemn" class="absolute top-5 right-9 z-[1005] ph ph-x text-4xl text-transparent"></i>
+      
+        <div class="w-fit flex-col gap-0 text-[--t] menu-list">
+          <h4 class="text-2xl font-semibold pb-1.5">Home Links</h4>
+          <a href="#service" class="hover:text-[--h]">Services</a>
+          <a href="#product" class="hover:text-[--h]">Products</a>
+          <a href="#support" class="hover:text-[--h]">Support</a>
+          <a href="#hotdeal" class="hover:text-[--h]">Hot Deals</a>
+        </div>
+      
+        <div class="w-fit flex-col gap-0 text-[--t] menu-list">
+          <h4 class="text-2xl font-semibold pb-1.5 w-fit">Products</h4>
+          <a href="#product" class="hover:text-[--h]">iPhones</a>
+          <a href="#product" class="hover:text-[--h]">Samsung</a>
+          <a href="#product" class="hover:text-[--h]">Google Pixel</a>
+          <a href="#product" class="hover:text-[--h]">Other Brands</a>
+          <a href="#product" class="hover:text-[--h]">Tabs & iPads</a>
+          <a href="#product" class="hover:text-[--h]">Accessories</a>
+          <a href="#product" class="hover:text-[--h]">Chargers & Adapters</a>
+          <a href="#product" class="hover:text-[--h]">Smart Watches</a>
+        </div>
+      
+        <div class="w-fit flex-col gap-0 text-[--t] menu-list">
+          <h4 class="text-2xl font-semibold pb-1.5">Services</h4>
+          <p class="hover:text-[--h]">- Trade-Ins</p>
+          <p class="hover:text-[--h]">- Phone Repair</p>
+          <p class="hover:text-[--h]">- Unlocking</p>
+          <p class="hover:text-[--h]">- Swap Deals</p>
+        </div>
+      
+        <div class="w-full items-center justify-between gap-0 text-transparent menu-list ph-duotone text-4xl">
+          <a href="#" class="ph ph-facebook-logo"></a>
+          <a href="#" class="ph ph-instagram-logo"></a>
+          <a href="#" class="ph ph-snapchat-logo"></a>
+          <a href="#" class="ph ph-whatsapp-logo"></a>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+  <section id="hero" class="relative w-full flex-col items-center justify-end gap-9">
+    <div class="w-full flex-col justify-end gap-5" data-aos="fade-right" data-aos-mirror="true">
+      <h1 class="text-[67px] text-[--b] font-extrabold leading-[0.85]">Your Ultimate<br>Source for<br><span id="span" class="text-transparent"></span><span id="cursor">_</span></h1>
+      <p class="text-[--t] leading-[0.9]"><span class="font-medium">Welcome</span> to <b class="text-lg font-['Handjet']">Cool Gadgets</b>, your number one store for smartphones, digital devices and their accessories <br><span class="mt-1.5 inline-block">in Uganda.</span></p>
+    </div>
+    <img src="hero.png" alt="Gadgets iPhones" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="1000" data-aos-mirror="true" class="w-2/3">
+  </section>
+
+  <section id="service" class="relative w-full flex-col items-center justify-center gap-9 bg-[--b]">
+    <h2 data-aos="fade" data-aos-mirror="true" class="text-6xl text-center font-extrabold">Our Services</h2>
+    <div class="w-full grid grid-flow-row gap-5 px-5 overflow-hidden">
+      <div class="div w-full flex-col items-center justify-center gap-3.5 p-5 py-9 rounded-3xl" data-aos="slide-right">
+        <img src="gadgets.png" alt="gadgets" class="w-12">
+        <h4 class="text-[--w] text-3xl font-bold">phones & gadgets sales</h4>
+        <p class="text-[--f] text-center font-light">We sell Smartphones, iPads and Tablets, Smart Watches, Laptops, Monitors, Bluetooth speakers e.t.c.</p>
+      </div>
+      <div class="div w-full flex-col items-center justify-center gap-3.5 p-5 py-9 rounded-3xl" data-aos="slide-left">
+        <img src="repairing.png" alt="phone repair" class="w-12">
+        <h4 class="text-[--w] text-3xl font-bold">mechanical phone repair</h4>
+        <p class="text-[--f] text-center font-light">We do all kinds of gadgets' repairs like battery replacement, changing screens, water damage recovery e.t.c.</p>
+      </div>
+      <div class="div w-full flex-col items-center justify-center gap-3.5 p-5 py-9 rounded-3xl" data-aos="slide-right">
+        <img src="adaptor.png" alt="chargers & adaptors" class="w-12">
+        <h4 class="text-[--w] text-3xl font-bold">chargers & adapters</h4>
+        <p class="text-[--f] text-center font-light">We have products like fast chargers, wireless chargers, multi-plug adapters & extension cables and many more.</p>
+      </div>
+      <div class="div w-full flex-col items-center justify-center gap-3.5 p-5 py-9 rounded-3xl" data-aos="slide-left">
+        <img src="earphone.png" alt="" class="w-12">
+        <h4 class="text-[--w] text-3xl font-bold">Phone Accessories</h4>
+        <p class="text-[--f] text-center font-light">These include earphones, air pods & buds, phone holders, screen guards, phone cases, and styluses.</p>
+      </div>
+      <div class="div w-full flex-col items-center justify-center gap-3.5 p-5 py-9 rounded-3xl" data-aos="slide-right">
+        <img src="up-selling.png" alt="" class="w-12">
+        <h4 class="text-[--w] text-3xl font-bold">phone swapping</h4>
+        <p class="text-[--f] text-center font-light">We do swap deals & phone upgrades from Android to iOS or vice versa and also trade-ins/buying used devices.</p>
+      </div>
+      <div class="div w-full flex-col items-center justify-center gap-3.5 p-5 py-9 rounded-3xl" data-aos="slide-left">
+        <img src="unlock.png" alt="" class="w-12">
+        <h4 class="text-[--w] text-3xl font-bold">phone unlocking</h4>
+        <p class="text-[--f] text-center font-light">We unlock phones both Android and iOS phones and software upgrades for smartphones, tabs and laptops.</p>
+      </div>
+      <div class="div w-full flex-col items-center justify-center gap-3.5 p-5 py-9 rounded-3xl" data-aos="slide-right">
+        <img src="cables.png" alt="" class="w-12">
+        <h4 class="text-[--w] text-3xl font-bold">USB Cables & Flash drives</h4>
+        <p class="text-[--f] text-center font-light">We sell all USB cables from Type-C, Lightning, Micro and storage devices e.g. flash drives & memory cards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="product" class="relative w-full flex-col items-center justify-center gap-9 bg-[--f]">
+    <h2 data-aos="fade" data-aos-mirror="true" class="text-6xl text-center font-extrabold">Our Products</h2>
+    <div class="w-full grid grid-flow-row gap-5 px-2.5 overflow-hidden">
+      <div data-aos="slide-right" class="relative w-full aspect-[4/3] flex-col items-center gap-2.5 overflow-hidden p-5 bg-[url('/iPhones.jpg')] bg-cover bg-center rounded-[35px]">
+        <div class="absolute w-full h-full top-0 left-0 bg-[#0009]"></div>
+        <h3 class="text-4xl text-[--w] font-bold capitalize z-10">iPhones</h3>
+        <div data-aos="zoom-in" class="w-full text-[--w] text-xs font-medium gap-3 justify-between z-10">
+          <ul class="flex-col">
+            <p>iPhone 7</p>
+            <p>iPhone 7+</p>
+            <p>iPhone 8</p>
+            <p>iPhone 8+</p>
+            <p>iPhone X</p>
+            <p>iPhone XR</p>
+            <p>iPhone Xs</p>
+            <p>iPhone Xs Max</p>
+            <p>iPhone 11</p>
+            <p>iPhone 11 Pro</p>
+            <p>iPhone 11 Pro Max</p>
+          </ul>
+          <ul class="flex-col">
+            <p>iPhone 12 Mini</p>
+            <p>iPhone 12</p>
+            <p>iPhone 12 Pro</p>
+            <p>iPhone 12 Pro Max</p>
+            <p>iPhone 13 Mini</p>
+            <p>iPhone 13</p>
+            <p>iPhone 13 Pro</p>
+            <p>iPhone 13 Pro Max</p>
+            <p>iPhone 14</p>
+            <p>iPhone 14 Plus</p>
+            <p>iPhone 14 Pro</p>
+          </ul>
+          <ul class="flex-col">
+            <p>iPhone 14 Pro Max</p>
+            <p>iPhone 15 Pro</p>
+            <p>iPhone 15 Pro Max</p>
+          </ul>
+        </div>
+      </div>
+      <div data-aos="slide-left" class="relative w-full aspect-[4/3] flex-col items-center gap-3 overflow-hidden p-5 bg-[url('/Samsungs.webp')] bg-cover bg-center rounded-3xl">
+        <div class="absolute w-full h-full top-0 left-0 bg-[#000a]"></div>
+        <h3 class="text-4xl text-[--w] font-bold capitalize z-10">Samsungs</h3>
+        <div data-aos="zoom-in" class="w-full text-[--w] text-xs font-medium gap-3 justify-between z-10">
+          <ul class="flex-col">
+            <p>Galaxy S7 Edge</p>
+            <p>Galaxy S8</p>
+            <p>Galaxy S8+</p>
+            <p>Galaxy S9</p>
+            <p>Galaxy S9+</p>
+            <p>Galaxy S10</p>
+            <p>Galaxy S10+</p>
+            <p>Galaxy S20</p>
+            <p>Galaxy S20+</p>
+            <p>Galaxy S20 Ultra</p>
+            <p>Galaxy S21</p>
+          </ul>
+          <ul class="flex-col">
+            <p>Galaxy S21+</p>
+            <p>Galaxy S21 Ultra</p>
+            <p>Galaxy S22</p>
+            <p>Galaxy S22+</p>
+            <p>Galaxy S22 Ultra</p>
+            <p>Galaxy S23</p>
+            <p>Galaxy S23+</p>
+            <p>Galaxy S23 Ultra</p>
+            <p>Galaxy S24</p>
+            <p>Galaxy S24+</p>
+            <p>Galaxy S24 Ultra</p>
+          </ul>
+          <ul class="flex-col">
+            <p>Galaxy Note 8</p>
+            <p>Galaxy Note 9</p>
+            <p>Galaxy Note 10</p>
+            <p>Galaxy Note 10+</p>
+            <p>Galaxy Note 20</p>
+          </ul>
+        </div>
+      </div>
+      <div data-aos="slide-right" class="relative w-full aspect-[4/3] flex-col items-center gap-3 overflow-hidden p-5 bg-[url('/Pixel-6a.jpg')] bg-cover bg-center rounded-3xl">
+        <div class="absolute w-full h-full top-0 left-0 bg-[#0009]"></div>
+        <h3 class="text-4xl text-[--w] font-bold capitalize z-10">Google Pixels</h3>
+        <div data-aos="zoom-in" class="w-full text-[--w] text-xs font-medium gap-3 justify-between z-10">
+          <ul class="flex-col">
+            <p>Google Pixel 3a</p>
+            <p>Google Pixel 4</p>
+            <p>Google Pixel 4a</p>
+            <p>Google Pixel 4a 5G</p>
+            <p>Google Pixel 5</p>
+            <p>Google Pixel 5a</p>
+            <p>Google Pixel 6</p>
+            <p>Google Pixel 6 Pro</p>
+            <p>Google Pixel 6a</p>
+            <p>Google Pixel 7</p>
+            <p>Google Pixel 7 Pro</p>
+          </ul>
+        </div>
+      </div>
+      <div data-aos="slide-left" class="relative w-full aspect-[4/3] flex-col items-center gap-3 overflow-hidden p-5 bg-[url('/Accessories.jpeg')] bg-cover bg-center rounded-3xl">
+        <div class="absolute w-full h-full top-0 left-0 bg-[#0007]"></div>
+        <h3 class="text-4xl text-[--w] font-bold capitalize z-10">Accessories</h3>
+        <div data-aos="zoom-in" class="w-full text-[--w] text-xs font-medium gap-3 justify-between z-10">
+          <ul class="flex-col">
+            <p>Air Pods</p>
+            <p>Galaxy Buds</p>
+            <p>Extension Cables</p>
+            <p>Screen Guards</p>
+            <p>Phone Batteries</p>
+            <p>Phone Cases</p>
+            <p>Phone Holders</p>
+            <p>Bluetooth Speakers</p>
+            <p>USB Cables</p>
+            <p>Fast Chargers</p>
+            <p>Earphones</p>
+          </ul>
+        </div>
+      </div>
+      <div data-aos="slide-right" class="relative w-full aspect-[4/3] flex-col items-center gap-3 overflow-hidden p-5 bg-[url('/dell.jpeg')] bg-cover bg-center rounded-3xl">
+        <div class="absolute w-full h-full top-0 left-0 bg-[#0007]"></div>
+        <h3 class="text-4xl text-[--w] font-bold capitalize z-10">Laptops & Monitors</h3>
+        <div data-aos="zoom-in" class="w-full text-[--w] text-xs font-medium gap-3 justify-between z-10">
+          <ul class="flex-col">
+            <p>MacBook Pro</p>
+            <p>MacBook Air</p>
+            <p>Monitors</p>
+            <p>Desktops</p>
+            <p>Wireless Mouse</p>
+            <p>Wireless Keyboard</p>
+            <p>Wired Keyboard</p>
+            <p>Wired Mouse</p>
+            <p>Windows Installation</p>
+            <p>HP Laptops</p>
+            <p>Dell Laptops</p>
+          </ul>
+        </div>
+      </div>
+      <div data-aos="slide-left" class="relative w-full aspect-[4/3] flex-col items-center gap-3 overflow-hidden p-5 bg-[url('/flash.webp')] bg-cover bg-center rounded-3xl">
+        <div class="absolute w-full h-full top-0 left-0 bg-[#000b]"></div>
+        <h3 class="text-4xl text-[--w] font-bold capitalize z-10">Storage Devices</h3>
+        <div data-aos="zoom-in" class="w-full text-[--w] text-xs font-medium gap-3 justify-between z-10">
+          <ul class="flex-col">
+            <p>OTG Flash Drives</p>
+            <p>SanDisk Flash Drives</p>
+            <p>Memory Cards</p>
+            <p>Hard Drives HDD</p>
+            <p>Solid State Drives SSD</p>
+            <p>RAM Chips</p>
+            <p>Beats</p>
+            <p>Hard Disk Cases</p>
+            <p>4-in-1 Flash Drives</p>
+            <p>3-in-1 Flash Drives</p>
+            <p>Card Readers</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-full grid grid-cols-2 gap-2.5 grid-gdts overflow-hidden">
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/s24ultra.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Samsung galaxy s24 ultra</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/iPhone15ProMax.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]"><span class="lowercase">i</span>Phone 15 Pro Max</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/pixel8.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-cover object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Google pixel 7 pro</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/s24plus.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Samsung galaxy s24 plus</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/earphones.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Accessories</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Otium Wireless Earbuds Red</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="OnePlus.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">OnePlus 12 5G Unlocked</p>
+        <p class="text-s text-sm font-medium">UK used</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="phantomX2.png" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Tecno phantom X2 5G</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/buds.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Earbuds</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Samsung Galaxy Buds</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/usbhub.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center rotate-90">
+        <p class="text-xs font-medium text-[--t] opacity-55">Accessories</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Type-A USB hub black</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/flip.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Samsung galaxy Z flip 4</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/wireless.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Accessories</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Wireless Charger</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/adaptor.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">chargers & adapters</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">All-Sockets travel adapter</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/flash.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">storage devices</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">2-in-1 OTG flash drive 128GB</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/nothing2.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">nothing phone 2 black</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/memory.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Storage devices</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">SanDisk 64GB memory card</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/galaxywatch.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smart Watch</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">galaxy watch 4 40mm</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/iPad.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Smartphone</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">apple <span class="lowercase">i</span>Pad mini 6th gen</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-left" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/protector.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Accessories</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">Ailun screen guard</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+      <div data-aos="slide-right" class="w-full flex-col justify-center gap-1.5 p-7 rounded-3xl bg-[--w]">
+        <img src="/case.webp" alt="gadget phone" class="w-32 rounded-lg aspect-[4/3] object-contain object-center">
+        <p class="text-xs font-medium text-[--t] opacity-55">Accessories</p>
+        <p class="text-lg text-[--b] font-semibold leading-[0.95]">otterbox phone case</p>
+        <p class="text-s text-sm font-medium">brand new</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="support" class="relative w-full flex-col items-center justify-center gap-9 bg-[--w]">
+    <h2 data-aos="fade" data-aos-mirror="true" class="text-6xl text-center font-extrabold">Customer Support</h2>
+    <div class="w-full flex-col gap-3">
+      <h4 data-aos="fade-right" class="text-4xl font-bold text-[--b]">Ecosystem Shifting</h4>
+      <p class="text-[--t]">As proponents of diverse ecosystems, we aid individuals in transitioning to Samsung, Apple, Google, or Huawei, providing support and guidance to ensure a seamless integration into these renowned digital platforms.</p>
+      <div class="w-full grid grid-flow-row gap-5 overflow-hidden">
+        <div data-aos="slide-right" class="bg-[url('/Samsung.webp')] relative w-full items-center justify-center aspect-video bg-cover bg-center rounded-lg overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-full bg-[#0009]"></div>
+          <h4 class="text-4xl text-[--w] font-bold z-10">Samsung Ecosystem</h4>
+        </div>
+        <div data-aos="slide-left" class="bg-[url('/Apple.webp')] relative w-full items-center justify-center aspect-video bg-cover bg-center rounded-lg overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-full bg-[#0009]"></div>
+          <h4 class="text-4xl text-[--w] font-bold z-10">Apple Ecosystem</h4>
+        </div>
+        <div data-aos="slide-right" class="bg-[url('/Google.jpeg')] relative w-full items-center justify-center aspect-video bg-cover bg-center rounded-lg overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-full bg-[#0009]"></div>
+          <h4 class="text-4xl text-[--w] font-bold z-10">Google Ecosystem</h4>
+        </div>
+        <div data-aos="slide-left" class="bg-[url('/Huawei.jpeg')] relative w-full items-center justify-center aspect-video bg-cover bg-center rounded-lg overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-full bg-[#0009]"></div>
+          <h4 class="text-4xl text-[--w] font-bold z-10">Huawei Ecosystem</h4>
+        </div>
+      </div>
+    </div>
+    <h2 data-aos="fade" data-aos-mirror="true" class="text-6xl text-center font-extrabold">Contact Us</h2>
+    <div class="relative w-full aspect-[3/4] flex-col items-center justify-between bg-[url('/Laptops.jpeg')] bg-cover bg-center p-7 rounded-[25px] overflow-hidden">
+      <div class="absolute w-full h-full bg-[#0009]"></div>
+      <h4 data-aos="slide-down" data-aos-mirror="true" class="text-5xl font-bold text-[--w] text-center capitalize z-10">want to reach out to us?!</h4>
+      <p data-aos="fade-right" data-aos-mirror="true" class="text-[--w] text-sm text-center z-10">Feel free to reach out to us with any inquiries, feedback, or suggestions you may have. Our team is here to assist you and will respond to your message as soon as possible.</p>
+      <form data-aos="slide-up" data-aos-mirror="true" id="form" class="relative w-full aspect-[4/2.5] items-center justify-center mb-2">
+        <textarea name="message" id="message" class="w-full h-full rounded-3xl text-[--b] text-sm p-3.5 bg-[--w] mt-2.5 outline-none" placeholder="Type your comment here!" required></textarea>
+        <button data-aos="zoom-in" data-aos-delay="500" data-aos-mirror="true" type="submit" class="absolute w-fit bottom-[7px] right-3 px-5 py-3 text-[--w] rounded-2xl bg-gradient-to-r from-[--c] to-[--h] hover:from-[--h] hover:to-[--r]">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="w-full flex items-center justify-center py-7 bg-[--b]">
+    <p class="text-s text-lg font-['Handjet']">All Rights Reserved, Cool Gadgets &copy;<span id="year-copy" class="font-['Handjet']"></span></p>
+  </footer>
+
+  <!-- AOS cdn links -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  
+    // Select all img elements
+    var images = document.querySelectorAll('img');
+    // Loop through each image and set the loading attribute to "lazy"
+    images.forEach(function(image) {
+      image.setAttribute('loading', 'lazy');
+    });
+    
+    // use a script tag or an external JS file
+    document.addEventListener("DOMContentLoaded", (event) => {
+      gsap.registerPlugin(ScrollTrigger)
+      // gsap code here!
+    });
+  </script>
+  
+  <script src="main.js"></script>
+</body>
+</html>
