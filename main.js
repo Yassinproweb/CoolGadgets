@@ -72,7 +72,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
   // Create a mailto link with the message and subject
   var subject = "Customer Cool Gadgets";
-  var mailtoLink = "mailto:yassinkatungi67@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+  var mailtoLink = "mailto:coolgadgets2ali@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
 
   // Open the default email client with the mailto link
   window.location.href = mailtoLink;
